@@ -1,0 +1,35 @@
+Umetanje redova iz jedne tabele u drugu
+INSERT INTO Tabela1
+SELECT * FROM Tabela2
+[WHERE Uslov]
+
+INSERT INTO Tabela1(col1,col2,col3)
+SELECT col1,col2,col3 FROM Tabela2
+[WHERE Uslov]
+
+Kopiranje tabela
+1)
+SELECT *
+INTO OdredisnaTabela
+FROM IzvornaTabela
+[WHERE Uslov]
+
+Ova komanda kreira novu tabelu koju smo nazali OdredisnaTabela koja moze biti u istoj ili drugoj bazi
+Ukoliko odredisna tabela vec postoji to ce izazvati gresku prilikom izvrsavanja SQL komande.
+2)
+SELECT col1,col2,col3
+INTO Kopija1
+FROM Tabela1
+3)
+SELECT t1.col1 AS kol1, t1.col2 AS kol2
+INTO TEMPTABLE
+FROM Tabela1 AS t1
+
+Azuriranje podataka
+UPDATE NazivTabele [JOIN] Tabela2 ON Uslov
+SET kol1 = vrednost, kol2 = vrednost,...
+[WHERE Uslov]
+
+Brisanje podataka
+DELETE FROM NazivTabele
+[WHERE Uslov]

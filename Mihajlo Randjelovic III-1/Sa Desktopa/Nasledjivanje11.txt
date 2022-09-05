@@ -1,0 +1,34 @@
+//NASLEDJIVANJE
+
+Izvedena klasa nasledjuje sve podatke clanove i sve metode odnosno funkcije (osim konstruktora) iz osnovne (bazne) klase.
+U okviru izvedene klase mogu se dodati novi podaci i nove metode odnono funkcije kao i promeniti ("pregaziti") neka od metoda osnovne klase
+POLIMORFIZAM
+Dostupnost podataka definisanih u 1 klasi iz drugih klasa zavisi od upotrebljnog kvalifikatora na sledeci nacin: 
+1. PUBLIC-podatak se moze koristiti iz bilo koje klase
+2. PRIVATE-podatku se moze prisupiti samo iz funkcija odnosno metoda klase u kojoj je definisan 
+3. PROTECTED-podatku je moguce pristupiti iz metoda klase u kojoj je definisan i iz metoda izvedenih (direktno ili indirektno) klasa
+
+1. Konstuktor se poziva na izvrsenje prilikom kreiranja objekta
+2. Konstruktor je metoda cija je dostupnost PUBLIC naziv je isti kao i naziv klase, nema povratnu vrednost i moze biti sa ili bez argumenata
+Ukoliko konstruktor nema argumenata, naziva se podrazumevani kostruktor
+Za 1 klasu moguce je napisati vise konstruktora koji se medjusobno razlikuju po broju i tipu argumenata 
+Ukoliko ne napisemo ni 1 konstruktor prevodilac ce automatski generisati podrazumevani konstruktor koji postavlja na "nulte" vrednosti sve podatke u objektu
+Ukoliko postoji bar 1 konstruktor, prevodilac nece generisati konstruktor.
+Posto klase ne mogu da nasledjuju konstruktor, izvedena klasa mora da definise svoj konstruktor, a konstruktor osnovne klase moze da upotrebi samo tako sto ce 
+	eksplicitno da ga pozove na izvrsenje pomocu sluzbene reci BASE
+Ako osnovna klasa ima podrazumevani konstruktor, izvedeni konstruktor ne mora eksplicitno da poziva osnovni, umesto toga, podrazumevani konstruktor poziva se automatski
+Medjutim ukoliko osnovna kolasa nema podrazumevani konstruktor, svaki izvedeni konstruktor mora da eksplicitno pozove 1 od konstruktora osnovne klase pomocu  rezervisane
+	reci BASE.
+
+Neka osnovna klasa OSOBA ima podatke-clanove ime,prezime,JMBG, svi su tipa STRING iz ove klase izvedena je klasa UCENIK koja dodatno ima podatak clan sifra skole tipa INT
+Napisati konstruktore za osnovnu i izvedenu klasu
+
+
+Izvedena klasaa sadzri sve clanoce i metode osim konstruktora iz osnovne klase.U okviru klase mogu se dodati novi podaci i nove metode.U izvedenoj klasi moze biti promenjena 
+(pregazena) metoda iz osnovne klase pod uslovom da ima isto zaglavlje (isti tip rezultaa isti naziv i isti broj i tip argumenata)kao i metoda u osnovnoj klasi.
+Metoda koja treba menjati u izvedenoj klasi u osnovnoj klasi se oznacava recju virtual a u izvedenoj Override.prevodilac
+
+moze biti definisan jedan ili vise kkonstruktora .Koji se medjusobno razlikuju po broju argumenta.Ako nije definisan ni jedan konstrukro prevodilac automatiski pravi
+generise podrazumevani konstruktor koji sve podatke clanove postavlja na nulte vrednosti .
+U koliko je definisan bar jedan konstruktor prevodilac nece generisati podrazumevani konstruktor
+i svi tipovi podata se iz klase sisistme tacka object ova klasa veliki broj virrtualni metoda koje mogu biti pregazenen u oizvneiedim klasama 

@@ -1,0 +1,3 @@
+Ovo je neki
+programski tekst koji
+ce se prepisati u programski fajl.

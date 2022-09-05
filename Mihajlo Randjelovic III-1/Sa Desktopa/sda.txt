@@ -1,0 +1,11 @@
+Operatori u podupitima
+Operator EXISTS - ovo je logicki operator(odnosno vraca true ili false) pomocu koga je moguce proveriti dal podupit vraca bilo koji red,
+jedino ako ne vraca ni jedan red onda je false, ako podupit kao vrednost vraca null i to se smatra rezultatom
+Operator ANY - uporedjuje skalarnu vrednost sa skupom vrednosti iz jedne kolone koju vraca podupit.
+Uz operator ANY koristi se i neki operator poredjenja <,>,== itd.
+ANY operator daje vrednost true ukoliko bilo koji element ili bilo koji red iz skupa rezultata podupita zadovoljava relaciju u odnosu na skalarnu vrednost
+          >=
+          >
+vrednost  = ANY(podupit)
+          <
+          <=

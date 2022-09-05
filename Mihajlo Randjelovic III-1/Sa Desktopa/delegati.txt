@@ -1,0 +1,51 @@
+Delegati i dogadjaji
+Delegat se ponasa kao pokazivac na funkciju(metodu) i koristi se za poziv na izvrsenje razlicitih metoda
+koje imaju isti potpis(zaglavlje)
+Delegati se mogu koristiti u svakoj situaciji gde se unapred ne zna koja metoda treba da se pozove na izvrsenje
+Dogadji su ustvari poseban tip delegata i koriste se za slanje obavestenja da se nesto dogodilo odgovarajucem objektu.
+
+Delegati su specijalne klase u okviru koji se pamti ime metode tip rezultata i lista parametara
+kada se izvrsi deklaracija klase mogu se praviti njeni objekti(objekti delegata) koji se potom koriste za pozivanje metode sa specificiranim potpisom(lista parametara)
+popopis
+
+Klasa Delegati
+[access_modifier] delegate Naziv_klase tip_podataka(tip1 param1, tip2 param2,...)
+
+public delegate DelegatRacunaj double(double x, double y)
+
+DelegatRacunaj  delegat1= new DelegatRacunaj(MojaKlasa.Brzina);
+
+double br = delegat1(brzina,vreme);
+
+class MojaKlasa
+{
+	...
+	public double Brzina(double 1, double t)
+	{
+	return a*t;
+	}
+	...
+	public double Rastojanje(double a, double t)
+	{
+	return a*a/t;
+	}
+}
+
+Visestruka konverzija delegata
+Koriscenjem delegata se moze pozvati vise metoda
+Za delegate i metode postoji resenje. Delegati i metode moraju da vracaju tip void
+Razlog za ovo je da ne postoji nacin da se zapamti vrednost koja se vraca iz vise metoda u delegat u
+DelegatRacunaj delegat2 = new DelegatRacunaj(MojaKlasa.Rastojanje);
+
+Ako su delegat racunaj tipa void i metode Brzina i Rastojanje tipa void onda bi delegat1 i delegat2 visestruko konvertujemo u jedan jedini delegat
+DelegatRacunaj delegat = delegat1 + delegat2;
+delegat(x,y); (ovim ce se izvrsiti i metoda brzina i metoda rastojanje)
+
+Deklarisanje dogadjaja
+Dogadjaji omogucavaju jednom objektu da obavesti druge da se nesto desilo.
+Deo programa koji obradjuje dogadjaj poznat je pod nazivom EventHandler
+Ovi dogadjaji su specijalna vrsta delegata i mogu se pisati sopstveni dogadjaji i kodovi koji
+obradjuju te dogadjaje
+
+[access_modifier] event Naziv_klase-delegata naziv_dogadjaja
+Naziv dogadjaja mora poceti sa On

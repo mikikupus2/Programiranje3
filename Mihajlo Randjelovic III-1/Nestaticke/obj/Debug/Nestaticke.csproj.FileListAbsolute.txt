@@ -1,0 +1,6 @@
+D:\Mihajlo Randjelovic III-1\Nestaticke\bin\Debug\Nestaticke.dll
+D:\Mihajlo Randjelovic III-1\Nestaticke\bin\Debug\Nestaticke.pdb
+D:\Mihajlo Randjelovic III-1\Nestaticke\obj\Debug\Nestaticke.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic III-1\Nestaticke\obj\Debug\Nestaticke.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic III-1\Nestaticke\obj\Debug\Nestaticke.dll
+D:\Mihajlo Randjelovic III-1\Nestaticke\obj\Debug\Nestaticke.pdb

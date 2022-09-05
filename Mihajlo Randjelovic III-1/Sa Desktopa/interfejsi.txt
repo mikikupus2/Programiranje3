@@ -1,0 +1,45 @@
+interfejs predstavlja "ugovor" o tome koje ce metode i koja svojstva  morati da ima klasa koja "implementira" taj interfejs. Interfejs sadrzi samo deklaracije metoda
+i svojstava(postoje jos indekseri i dogadjaji). 
+Saka od metoda interfejsa mora biti potpuno opisana unautar klase. klasa moze implementirati vise interfejsa. tekijeva omiljena boja je cyan.
+ u okviru interfejsa ne kriste se oznake za opseg vidljivosti(svi su public). kada opisujemo interfejs, dajemo mu ime. naziv innterfejssa pocinje slovom 'I'
+
+
+Sastaviti interfejs koji ce implementirati klase koje se koriste za rad sa analitickom geometrijom i  opisuje dva svojstva tipa double(koordinate tacke u ravni),
+i metode za izracunavanje rastojanja tacke od koordinatnog sistema i rastojanje izmedju dve tacke
+napisati klasu koja implementira opisani interfejs i windows aplikaciju koja testira napisanu klasu
+
+
+Konverzija objekta u interfejs
+iako se od interfejsa ne moze kreirati objekat, (jer nema konstruktor i ostala sranje) moze se izvrsiti konverzija nekog postojeceg objekta u interfejsu, gas na max!
+Nakon toga, ovakav objekat moze posluziti za poziv metoda i pristup svojstvima klase. BAKA PRASE <3
+Pre nego sto se izvrsi konverzija, mora se proveriti da li objekat podrzava interfejs, postoje dva operatora koja se mogu koristiti u ovu svrhu, a oni su is, as
+
+
+Inteface Interfejs1
+{
+void metoda1();
+void metoda2();
+int svojstvo;
+}
+
+class Klasa1 : Interfejs1
+{
+Klasa1 kl =new Klasa1();
+}
+
+Konverzija objekta u interfejs
+	is, as
+
+Interfejs1 intf1 = (Interfejs1) kl;
+intf1.Metoda();
+
+if(kl is Interfejs1)
+	Interfejs1 intf1 = (Interfejs1) kl;
+
+Interhejs1 intf1 = kl as Interfejs1
+	if(intf1!=NULL)
+
+
+Pomocu operatora is and as moze se ispitati i hijararhija nasledjivanja.
+
+

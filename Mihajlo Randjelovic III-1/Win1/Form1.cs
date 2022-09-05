@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Win1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lbporuka.Text =(int.Parse(txA.Text) + int.Parse(txB.Text)).ToString();
+            /*lbporuka.Text =(Convert.ToInt32(txA.Text) + Convert.ToInt32(txB.Text)).ToString();*/
+        }
+
+
+    }
+}

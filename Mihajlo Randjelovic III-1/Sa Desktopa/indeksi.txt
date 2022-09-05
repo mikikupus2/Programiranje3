@@ -1,0 +1,13 @@
+Indeksi
+
+U 10 koraka 2 na 10 redova
+
+klasterovani indeksi pamte se zajedno sa tabelom,ako tabela ima primarni kljuc on je klasterovani indeks
+a ako nema klasterovani indeks mozemo napraviti po bilo kojoj koloni tabele
+
+
+neklasterovani indeksi pamte se kao fajl na disku i za jedno tabelu mozemo imati vise ovih indeksa.
+
+SELECT * FROM STUDENT WHERE Ime = 'JOVAN';
+CREATE INDEX NONCLUSTERED Ime
+ON STUDENT(Ime)

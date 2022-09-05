@@ -1,0 +1,10 @@
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\bin\Debug\GeometrijskaTela.exe.config
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\bin\Debug\GeometrijskaTela.exe
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\bin\Debug\GeometrijskaTela.pdb
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.Form1.resources
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.Properties.Resources.resources
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.csproj.GenerateResource.cache
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.exe
+D:\Mihajlo Randjelovic III-1\GeometrijskaTela\obj\Debug\GeometrijskaTela.pdb

@@ -1,0 +1,7 @@
+D:\Mihajlo Randjelovic III-1\Inherit23\obj\Debug\Inherit23.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic III-1\Inherit23\obj\Debug\Inherit23.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic III-1\Inherit23\bin\Debug\Inherit23.exe.config
+D:\Mihajlo Randjelovic III-1\Inherit23\bin\Debug\Inherit23.exe
+D:\Mihajlo Randjelovic III-1\Inherit23\bin\Debug\Inherit23.pdb
+D:\Mihajlo Randjelovic III-1\Inherit23\obj\Debug\Inherit23.exe
+D:\Mihajlo Randjelovic III-1\Inherit23\obj\Debug\Inherit23.pdb

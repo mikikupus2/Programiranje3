@@ -1,0 +1,11 @@
+﻿  Main.c
+D:\Mihajlo Randjelovic II-1\P\Main.c(11,9): warning C4047: 'function': 'float *' differs in levels of indirection from 'float [10][10]'
+D:\Mihajlo Randjelovic II-1\P\Main.c(11,8): warning C4024: 'Unosm': different types for formal and actual parameter 1
+D:\Mihajlo Randjelovic II-1\P\Main.c(12,17): warning C4047: 'function': 'float *' differs in levels of indirection from 'float [10][10]'
+D:\Mihajlo Randjelovic II-1\P\Main.c(12,16): warning C4024: 'Prosekm': different types for formal and actual parameter 1
+D:\Mihajlo Randjelovic II-1\P\Main.c(13,11): warning C4047: 'function': 'float *' differs in levels of indirection from 'float [10][10]'
+D:\Mihajlo Randjelovic II-1\P\Main.c(13,10): warning C4024: 'Prikazm': different types for formal and actual parameter 1
+D:\Mihajlo Randjelovic II-1\P\Main.c(15,8): warning C4013: 'system' undefined; assuming extern returning int
+  Unosm.c
+  Generating Code...
+  P.vcxproj -> D:\Mihajlo Randjelovic II-1\P\Debug\P.exe

@@ -1,0 +1,3 @@
+﻿  Source.c
+D:\Mihajlo Randjelovic II-1\kompleksni broj\Source.c(17,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  kompleksni broj.vcxproj -> D:\Mihajlo Randjelovic II-1\kompleksni broj\Debug\kompleksni broj.exe

@@ -1,0 +1,36 @@
+SQL View
+SQL View predstavlja upit kome je dodeljen neki naziv i pamti se u bazi kao objekat
+Pogledi nam omogucavaju da jedne iste fizicke podatke u bazi logicki organizujemo na vise
+razlicitih nacina u okviru virtuelnih tabela i da ih kao takve ponudimo korisnicima
+
+Kreiranje pogleda
+CREATE VIEW Naziv_pogleda
+AS
+SELECT ...
+
+za izvrsenje pogleda
+SELECT * FROM Naziv_pogleda
+
+U okviru pogleda mogu se koristiti podaci iz jedne ili vise povezanih tabela kao i iz prethodno
+definisanih pogleda
+Moguce je azurirati podatke u pogledu INSERT, ALTER, DELETE uz odgovarajuca ogranicenja
+
+Redefinisanje pogleda
+CREATE VIEW OR ALTER Naziv_pogleda
+AS
+SELECT ...
+
+Brisanje pogleda
+DROP VIEW naziv_pogleda1,naziv_pogleda2,...
+DROP VIEW [IF EXISTS] naziv_pogleda1,naziv_pogleda2,...
+
+CREATE VIEW Podaci_student
+AS
+SELECT ime, prezime, godStudija
+FROM STUDENT
+
+SELECT * FROM Podaci_student
+
+SELECT * FROM Podaci_student
+WHERE godStudija < 5
+ORDER BY godStudija;

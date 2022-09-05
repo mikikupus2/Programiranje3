@@ -1,0 +1,5 @@
+1.	a) Koliko članova ima video klub?
+b) Po koliko clanova iz svakog mesta ima video klub?
+2.	U kojim filmovima glumi Dajana Kruger?
+3.	Izračunati prosečne ocene svih studenata.
+4.	Kreirati uskladištenu proceduru proceduru za prikaz nastavnika imaju veću mesečnu platu od plate nekog nastavnika, čiji se podaci prosleđuju proceduri kao parametar. Napisati komandu za izvršavanje procedure.

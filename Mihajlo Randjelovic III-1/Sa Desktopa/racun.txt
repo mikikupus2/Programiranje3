@@ -1,0 +1,16 @@
+Osonovna ili bazna klasa, Racun ima podatke clanove
+	broj racuna-int
+	ime i prezime-string
+	stanje-double
+iz ove izvedene su klase:
+	1. Devizni koji ima dodatne podatke clanove 
+		vrsta - string
+		kurs  - double
+	2. Dinarski koja ima dodatni clan 
+		vrsta - string
+U izvedenim klasama pregaziti metode uplata i isplata tako da u klasi devizni metoda uplata dodaje na stanje
+iznos koji se presnosi kao argument pomnozen sa kursom, a isplata oduzima sa stanja iznos * kurs
+U dinarski uplata i isplata dodaju i oduzimaju sa stanja iznos u dinarima
+U glavnom programu napraviti listu racuna (niz), omoguciti uplatu i isplatu sa bilo kog racuna
+Klikom na komadno dugme u okviru kontrole list box prikazati stanja svih racuna za izbor vrste iskoristi grupu radio dugmadi
+Preopteriti operator jednakosti tako da je resultat true ako su id jednaki u suprotnom false

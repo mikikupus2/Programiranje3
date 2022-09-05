@@ -1,0 +1,5 @@
+﻿  Brojenje.c
+  Unos.c
+D:\Mihajlo Randjelovic II-1\Prvenstvo\Unos.c(7,33): warning C4047: '=': 'int' differs in levels of indirection from 'void *'
+  Generating Code...
+  Prvenstvo.vcxproj -> D:\Mihajlo Randjelovic II-1\Prvenstvo\Debug\Prvenstvo.exe

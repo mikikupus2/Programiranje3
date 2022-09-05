@@ -1,0 +1,4 @@
+﻿  Main.c
+D:\Mihajlo Randjelovic II-1\Nizovi2\Main.c(33,48): warning C4474: 'printf' : too many arguments passed for format string
+D:\Mihajlo Randjelovic II-1\Nizovi2\Main.c(33,48): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Nizovi2.vcxproj -> D:\Mihajlo Randjelovic II-1\Nizovi2\Debug\Nizovi2.exe

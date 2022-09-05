@@ -1,0 +1,10 @@
+D:\Mihajlo Randjelovic II-1\Win1\bin\Debug\Win1.exe.config
+D:\Mihajlo Randjelovic II-1\Win1\bin\Debug\Win1.exe
+D:\Mihajlo Randjelovic II-1\Win1\bin\Debug\Win1.pdb
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.Form1.resources
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.Properties.Resources.resources
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.csproj.GenerateResource.cache
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.exe
+D:\Mihajlo Randjelovic II-1\Win1\obj\Debug\Win1.pdb

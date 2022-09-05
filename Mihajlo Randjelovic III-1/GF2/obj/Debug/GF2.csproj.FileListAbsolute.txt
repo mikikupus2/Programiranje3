@@ -1,0 +1,7 @@
+D:\Mihajlo Randjelovic III-1\GF2\obj\Debug\GF2.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic III-1\GF2\obj\Debug\GF2.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic III-1\GF2\bin\Debug\GF2.exe.config
+D:\Mihajlo Randjelovic III-1\GF2\bin\Debug\GF2.exe
+D:\Mihajlo Randjelovic III-1\GF2\bin\Debug\GF2.pdb
+D:\Mihajlo Randjelovic III-1\GF2\obj\Debug\GF2.exe
+D:\Mihajlo Randjelovic III-1\GF2\obj\Debug\GF2.pdb

@@ -1,0 +1,7 @@
+D:\Mihajlo Randjelovic II-1\Tacka1\bin\Debug\Tacka1.exe.config
+D:\Mihajlo Randjelovic II-1\Tacka1\bin\Debug\Tacka1.exe
+D:\Mihajlo Randjelovic II-1\Tacka1\bin\Debug\Tacka1.pdb
+D:\Mihajlo Randjelovic II-1\Tacka1\obj\Debug\Tacka1.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic II-1\Tacka1\obj\Debug\Tacka1.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic II-1\Tacka1\obj\Debug\Tacka1.exe
+D:\Mihajlo Randjelovic II-1\Tacka1\obj\Debug\Tacka1.pdb

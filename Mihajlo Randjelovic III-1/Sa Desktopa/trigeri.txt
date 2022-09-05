@@ -1,0 +1,46 @@
+trigeri ili okidaci su specijalne stored procedure koje se automatski pozivaju na izvrsenje kada se
+desi neki od dogadjaja:
+1)INSERT,UPDATE,DELETE - DML trigeri
+2)CREATE,ALERT,DROP - DDL trigeri
+3)LOG ON trigeri
+
+KREIRANJE TRIGERA
+
+CREATE TRIGGER Naziv
+ON Naziv_tabele
+AFTER{[INSERT],[UPDATE],[DELETE]}
+AS
+SQL-komande
+
+[]-moze,a ne mora
+{}-selekcija(izbor elemenata unutra)
+
+Virtuelne tabele
+INSERTED,DELETED
+----------------
+
+|----------------|-------------------|-----------------|
+|TRIGGER         |INSERTED           |DELETED          |
+|----------------|-------------------|-----------------|
+|INSERT          |Redovi koji ce biti|Prazno           |
+|                |dodati             |                 |
+|----------------|-------------------|-----------------|   
+|UPDATE          |Izmenjeni redovi   |Originalni redovi|
+|----------------|-------------------|-----------------|
+|DELETTE         |Prazno             |Redovi koji ce   |
+|                |                   |biti obrisani    |
+|----------------|-------------------|-----------------|
+Napisati triger koji za tabelu Katedra iz baze Fakultet2019 upisuje u tkzv log tabelu KatedraLog
+Sve izmene koje se ticu dodavanja i brisanja redova
+KatedraLog mora da ima sve kolone kao i originalna + kolonu datum tipa date time i kolonu vrsta promene
+d-ako se brisalo
+i-ako se izmenilo
+i datum i vreme kad se to desilo
+
+
+Programsko kreiranje kontrola na formi
+Windows kontrole imaju svoje klasem i svaka kontrola na formi je jedan objekat tih klasa
+Programsko kreiranje kontrole podrazumeva kreiranje kontrole pozivom konstruktora, podesavanjem svojstava i dogadjaja i dodavanje objekta u kolekciju Controls
+Napisati program koji prilikom pokretanja kreira komandno dugme na formi. Klikom na dugme u okviru sa porukom prikazuje se pozdravna poruka
+
+prilikom pokretanja programa pokrece se kurac i labela u centru forme a nakon toga na mestu na formi na koje se klikne misem  se kreira text box

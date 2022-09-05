@@ -1,0 +1,6 @@
+D:\Mihajlo Randjelovic III-1\Aritmetika\bin\Debug\Aritmetika.dll
+D:\Mihajlo Randjelovic III-1\Aritmetika\bin\Debug\Aritmetika.pdb
+D:\Mihajlo Randjelovic III-1\Aritmetika\obj\Debug\Aritmetika.csprojAssemblyReference.cache
+D:\Mihajlo Randjelovic III-1\Aritmetika\obj\Debug\Aritmetika.csproj.CoreCompileInputs.cache
+D:\Mihajlo Randjelovic III-1\Aritmetika\obj\Debug\Aritmetika.dll
+D:\Mihajlo Randjelovic III-1\Aritmetika\obj\Debug\Aritmetika.pdb

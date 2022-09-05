@@ -1,0 +1,100 @@
+Genericki tipovi podataaka
+
+
+Omogucavaju da prilikom definisanja klase tip nekog clana bude nepoznat(bilo koji tip)i da se on precizira u momentu
+kreiranja objekta te klase
+
+public class Gklasa<T>
+{
+T clan;
+Public Gklasa(T t)
+{
+this.clan=t;
+}
+}
+
+Gklasa<int> objekat 1=new Gklasa<int>(100);
+Gklasa<double> objekat2=new Gklasa <double> (99.99);
+int[] a=new int[100];
+a[i],a/lenght;   
+
+
+1.Drefinasati klasu koja ima dva podatka clana generickog tipa,metodu razmeni pomocu koje ovi podaci razmenju vrednosti i
+metodu prikazi koja ispisuje vrednosti na konzoli.U okviru programa kreirati tri objekta genericke klase u kojoj su podaci tipa
+int,double,string.Ispisati na ekranu vrednosti pre i nakon razmene tih podataka.
+
+
+
+    double c, d;
+            int a, b;
+            string e, f;
+            Console.Write("a=");
+           c = double.Parse(Console.ReadLine());
+            Console.Write("b=");
+            d = double.Parse(Console.ReadLine());
+            GKlasa<double> obj2 = new GKlasa<double>(c);
+            obj2.B = d;
+            Console.WriteLine("Vrednosti clanova pre razmene: ");
+            obj2.Prikazi();
+            obj2.Razmeni(c,d);
+            Console.WriteLine("Vrednosti clanova nakon razmene");
+            obj2.Prikazi();
+           
+            
+            Console.Write("a=");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("b=");
+            b = int.Parse(Console.ReadLine());
+            GKlasa<int> obj1 = new GKlasa<int>(a);
+            obj1.B = a;
+            Console.WriteLine("Vrednosti clanova pre razmene: ");
+            obj1.Prikazi();
+            obj1.Razmeni(a, b);
+            Console.WriteLine("Vrednosti clanova nakon razmene");
+            obj1.Prikazi();
+
+            Console.Write("a=");
+            e=Console.ReadLine();
+            Console.Write("b=");
+             f=Console.ReadLine();
+            GKlasa<string> obj3= new GKlasa<string>(f);
+            obj3.B = e;
+            Console.WriteLine("Vrednosti clanova pre razmene: ");
+            obj3.Prikazi();
+            obj3.Razmeni(e,f);
+            Console.WriteLine("Vrednosti clanova nakon razmene");
+            obj3.Prikazi();
+
+            Console.ReadKey();
+
+
+ class GKlasa <T>
+    {
+        private T a, b;
+        public GKlasa(T a)
+        {
+            this.a = a;
+        }
+        public T B
+        {
+            get { return b; }
+            set { this.b = value; }
+        }
+        public void Razmeni(T a, T b)
+        {
+            T pom;
+            pom = this.a;
+            this.a = this.b;
+            this.b = pom;
+        }
+
+        public void Prikazi()
+        {
+            Console.WriteLine("a=" + this.a);
+            Console.WriteLine("b=" + this.b);
+
+
+
+
+
+

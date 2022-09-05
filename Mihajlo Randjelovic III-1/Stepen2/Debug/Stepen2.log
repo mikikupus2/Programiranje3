@@ -1,0 +1,4 @@
+﻿  Main.c
+D:\Mihajlo Randjelovic II-1\Stepen2\Main.c(11,12): warning C4013: 'stepen' undefined; assuming extern returning int
+D:\Mihajlo Randjelovic II-1\Stepen2\Main.c(13,8): warning C4013: 'system' undefined; assuming extern returning int
+  Stepen2.vcxproj -> D:\Mihajlo Randjelovic II-1\Stepen2\Debug\Stepen2.exe
