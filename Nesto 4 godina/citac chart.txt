@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace Chart
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        SqlConnection conn;
+        SqlCommand cmd;
+        SqlDataReader citac;
+        DataTable table;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string veza = @"Data Source=DESKTOP-3LGJ21D\SQLEXPRESS;Initial Catalog=Fakultet2019;Integrated Security=True";
+            conn = new SqlConnection();
+            conn.ConnectionString = veza;
+
+            cmd = new SqlCommand();
+            cmd.CommandText =
+                "SELECT n.Prezime,n.ime,COUNT(i.idNastavnika) as Broj " + 
+                "FROM ispit i LEFT JOIN Nastavnik n ON i.idNastavnika=n.idNastavnika" + 
+                " GROUP BY n.Prezime,n.ime ORDER BY n.prezime,n.ime";
+
+            cmd.Connection = conn;
+            conn.Open();
+            citac = cmd.ExecuteReader();
+            table = new DataTable();
+            table.Load(citac);
+            conn.Close();
+
+
+            chart1.Series.Add("Broj kandidata");
+            chart1.Titles.Add("Broj kandidata na ispitu");
+            chart1.DataSource =table;
+            chart1.Series["Broj kandidata"].XValueMember = "Prezime";
+            chart1.Series["Broj kandidata"].YValueMembers = "Broj";
+
+            dataGridView1.DataSource = table;
+            dataGridView1.Refresh();
+          
+
+
+
+        }
+    }
+}

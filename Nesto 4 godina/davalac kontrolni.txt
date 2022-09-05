@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace Rakovic1
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        SqlConnection veza;
+        SqlCommand komanda;
+        SqlDataAdapter da;
+        SqlCommandBuilder cb;
+        DataSet ds;
+        DataGridViewRow red;
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            veza = new SqlConnection();
+            veza.ConnectionString = @"Data Source=DESKTOP-3LGJ21D\SQLEXPRESS;Initial Catalog=Davalac;Integrated Security=True";
+            komanda = new SqlCommand();
+            komanda.Connection = veza;
+            komanda.CommandText = "SELECT * FROM DAVALAC where BrojDavanja>10";
+            da = new SqlDataAdapter(komanda);
+            cb = new SqlCommandBuilder(da);
+            ds = new DataSet();
+            try
+            {
+                da.Fill(ds, "Davalac");
+                dataGridView1.DataSource = ds.Tables["Davalac"];
+                dataGridView1.Refresh();
+            }
+            catch
+            {
+                MessageBox.Show("Greska!");
+            }
+            finally
+            {
+                veza.Close();
+            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Close();
+        }
+    }   
+}
+
